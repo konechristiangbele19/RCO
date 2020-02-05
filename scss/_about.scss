@@ -1,4 +1,4 @@
-.about_area{
+.about_area {
     padding-top: 200px;
     padding-bottom: 100px;
     @media #{$mobile_device} {
@@ -13,8 +13,8 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    .about_info{
-        p{
+    .about_info {
+        p {
             font-size: 16px;
             line-height: 28px;
             font-size: 16px;
@@ -22,42 +22,38 @@
             margin-top: 0;
             margin-bottom: 47px;
         }
-        a{
+        a {
             @media #{$mobile_device} {
                 margin-bottom: 30px;
             }
         }
     }
-    .about_thumb{
+    .about_thumb {
         @include justify-content(flex-end);
         @media #{$tablet_device} {
             // display: block !important;
             @include justify-content(flex-start);
             margin-top: 30px;
         }
-        img{
+        img {
             width: 100%;
         }
-        .img_1{
-
-        }
-        .img_2{
+        .img_1 {}
+        .img_2 {
             margin-top: 40px;
             margin-left: 10px;
         }
     }
-    .about_thumb2{
+    .about_thumb2 {
         // @include justify-content(flex-end);
-        @media #{$tablet_device}{
+        @media #{$tablet_device} {
             margin-bottom: 30px;
         }
-        img{
+        img {
             width: 100%;
         }
-        .img_1{
-
-        }
-        .img_2{
+        .img_1 {}
+        .img_2 {
             margin-top: 40px;
             margin-left: 10px;
         }
@@ -65,10 +61,11 @@
 }
 
 // about_info_area.
-.about_bg_1{
+.about_bg_1 {
     background-image: url(../img/banner/about_banner.png);
 }
-.about_info_area{
+
+.about_info_area {
     padding-left: 387px;
     margin-top: 50px;
     @media #{$tablet_device} {
@@ -83,7 +80,7 @@
     @media #{$large_device} {
         padding-left: 0px;
     }
-    .single_slider{
+    .single_slider {
         height: 750px;
         background-size: cover;
         background-position: center center;
@@ -99,40 +96,41 @@
         }
     }
 }
-.about_main_info{
+
+.about_main_info {
     padding-top: 100px;
     @media #{$mobile_device} {
         padding-top: 50px;
     }
-    .single_about_info{
+    .single_about_info {
         margin-bottom: 43px;
         @media #{$mobile_device} {
             margin-bottom: 30px;
         }
-        h3{
+        h3 {
             font-size: 22px;
             color: #1F1F1F;
             margin-bottom: 0;
             margin-bottom: 10px;
             line-height: 32px;
         }
-        p{
+        p {
             font-size: 16px;
             line-height: 28px;
             font-weight: 400;
             color: #4D4D4D;
-            br{
+            br {
                 @media #{$mobile_device} {
-                   display: none;
+                    display: none;
                 }
                 @media #{$tablet_device} {
-                   display: none;
+                    display: none;
                 }
                 @media #{$mid_device} {
-                   display: none;
+                    display: none;
                 }
                 @media #{$large_device} {
-                   display: none;
+                    display: none;
                 }
             }
         }
