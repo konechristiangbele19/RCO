@@ -1,4 +1,0 @@
-<ul class="submenu">
-     <li><a href="single-blog.html">Reservations</a></li>
-     <li><a href="single-blog.html">Tarifs</a></li>
-</ul>

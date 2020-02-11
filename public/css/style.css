@@ -1,0 +1,17 @@
+/*=========HEADER=============*/
+
+header div.navbar.navbar-default.navbar-static-top div.container {
+  display: flex;
+  justify-content: center;
+}
+
+header div.navbar.navbar-default.navbar-static-top div.container div.navbar-header a.navbar-brand img {
+  display: none;
+}
+
+/*=========BANIER =============*/
+
+.pageTitle {
+  text-transform: capitalize;
+}
+

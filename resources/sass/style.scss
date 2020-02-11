@@ -1,0 +1,43 @@
+/*=========HEADER=============*/
+header {
+    div.navbar.navbar-default.navbar-static-top {
+        div.container {
+            display: flex;
+            justify-content: center;
+            div.navbar-header {
+                button.navbar-toggle {
+                    span.icon-bar {
+                    }
+                }
+
+                a.navbar-brand {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+
+            div.navbar-collapse.collapse {
+                ul.nav.navbar-nav {
+                    li.active {
+                        a {
+                        }
+                    }
+
+                    li {
+                        a {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*=========BANIER =============*/
+
+.pageTitle{
+    text-transform: capitalize;
+}
