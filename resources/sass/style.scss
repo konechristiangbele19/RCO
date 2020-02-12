@@ -34,10 +34,80 @@ header {
     }
 }
 
-
-
 /*=========BANIER =============*/
 
-.pageTitle{
+.pageTitle {
     text-transform: capitalize;
+
 }
+
+#d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .pageTitle {
+
+  }
+
+  h2 {
+    color: #FFFFFF;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+
+  }
+}
+
+/*=========HOME =============*/
+
+div.row {
+  div.skill-home {
+    div.skill-home-solid.clearfix {
+      div.col-md-3.text-center {
+        span.icons {
+          font-size: 1px;
+        }
+
+        div.box-area {
+          height: 28em;
+
+          h3 {
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+.box-foot {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-size: 17px;
+  }
+
+  .btn {
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+}
+
+
+/*=============detail hotel============*/
+#box-shadow-left {
+  box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+  margin: 0 1em 1em 1em;
+  padding: 1em;
+}
+
+.my-css {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: none;
+  color: #1891ec;
+}
+

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/theme/flexslider.css')}}">
     <link rel="stylesheet" href="{{asset('css/theme/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/theme/font-awesome.css')}}">
+    <link rel="stylesheet" href="{{asset('fonts/fontawesome-webfont.woff')}}">
     <link rel="stylesheet" href="{{asset('css/theme/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
@@ -31,6 +32,8 @@
 
 </body>
 <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/theme/jquery-1.4.3.min.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/theme/jquery.js')}}"></script>
 <script type="text/javascript"  src="{{URL::asset('js/theme/jquery.easing.1.3.js')}}"></script>
 <script type="text/javascript"  src="{{URL::asset('js/theme/jquery.easing.1.3.js')}}"></script>
 <script type="text/javascript"  src="{{URL::asset('js/popper.min.js')}}"></script>
@@ -42,4 +45,5 @@
 <script type="text/javascript"  src="{{URL::asset('js/theme/jquery.flexslider.js')}}"></script>
 <script type="text/javascript"  src="{{URL::asset('js/theme/animate.js')}}"></script>
 <script type="text/javascript"  src="{{URL::asset('js/theme/custom.js')}}"></script>
+<script type="text/javascript" src="{{URL::asset('js/theme/owl.carousel.min.js')}}"></script>
 </html>

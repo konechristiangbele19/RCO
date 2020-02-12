@@ -31,3 +31,17 @@ Route::get('/hotels', function(){
 Route::get('/reservations', function(){
     return view('pages.reservations');
 });
+
+Route::get('/commentCaMarche', function () {
+    return view('pages.commentCaMarche');
+});
+
+Route::get('/detailHotel/{id}/{nameHotel}', function ($id, $nameHotel) {
+
+    $prix = 10000;
+
+    return view('pages.detailsHotel', [
+        'name' => $nameHotel,
+        'prix' => $prix
+    ]);
+});
