@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/RCO_projetGL.iml" filepath="$PROJECT_DIR$/.idea/RCO_projetGL.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/exotic-travels-free-web-template.iml" filepath="$PROJECT_DIR$/.idea/exotic-travels-free-web-template.iml" />
     </modules>
   </component>

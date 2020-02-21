@@ -19,7 +19,7 @@
                     </li>
 
                     <li>
-                        <a href="detail_hotel.php">Hôtel</a>
+                        <a href="hotel.php">Hôtel</a>
                     </li>
 
                     <li>

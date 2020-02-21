@@ -1,7 +1,7 @@
 <html>
 
 <header>
-    <link rel="stylesheet" href="data_invalid.css">
+    <link rel="stylesheet" href="page_no_found.css">
 </header>
 <body class="bg-purple">
 
@@ -13,14 +13,14 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="../../index.php">Home</a></li>
-                <li><a href="../../detail_hotel.php">hotel</a></li>
+                <li><a href="../../hotel.php">hotel</a></li>
                 <li><a href="../../reservations.php">Reservation</a></li>
             </ul>
         </div>
     </div>
     <div class="central-body">
         <img class="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px">
-        <a href="../../detail_hotel.php" class="btn-go-home">RETOUR</a>
+        <a href="../../hotel.php" class="btn-go-home">RETOUR</a>
     </div>
     <div class="objects">
         <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">

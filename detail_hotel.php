@@ -167,9 +167,13 @@
 			</div>
 
 			<div class="form-group mt-lg-2">
+				<label class="col-form-label">Votre contact</label>
+				<input type="text" class="form-control" placeholder="votre contact" name="contact" required>
+			</div>
+
+			<div class="form-group mt-lg-2">
 				<label class="col-form-label">type de chambre</label>
 				<input type="text" class="form-control" placeholder="type de chambre" name="typeChambre" required>
-
 			</div>
 			<div class="form-group">
 				<label class="col-form-label">nombre de sejour</label>
