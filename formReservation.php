@@ -1,5 +1,6 @@
 <?php
 
+include_once('./crud_queries/Querry.php');
 if (isset($_POST) && !empty($_POST)) {
 
     /**
@@ -11,6 +12,7 @@ if (isset($_POST) && !empty($_POST)) {
         'email' => $_POST['email'],
         'ville' => $_POST['ville'],
         'genre' => $_POST['genre'],
+        'contact' => $_POST['contact'],
         'typeChambre' => $_POST['typeChambre'],
         'nombreSejour' => $_POST['nombreSejour'],
     ];
@@ -19,31 +21,34 @@ if (isset($_POST) && !empty($_POST)) {
     $result = validateForm($dataForm);
 
     if (!$result) {
-        redirectPage('./pageErreurs/data_invalide/data_invalid');
+        redirectPage('./pageMessages/data_invalide/data_invalid');
     } else {
-        if (($result["isEmail"] == "false") || ($result["nombreSejour"] == "false")) {
-            redirectPage('./pageErreurs/data_invalide/data_invalid');
+        if (($result["isEmail"] == "false") || ($result["numberDayIsPositive"] == "false")) {
+            redirectPage('./pageMessages/data_invalide/data_invalid');
         } else {
-            //require("DataBaseConnexion/connexion.php");
-            return true;
+
+            $nom = $result['nom'];
+            $prenom = $result['prenom'];
+            $email = $result['email'];
+            $genre = $result['genre'];
+            $contact = $result['contact'];
+            $ville = $result['ville'];
+            $nom_hotel = $result['nom_hotel'];
+            $type_chambre = $result['typeChambre'];
+            $nomHotel = $_GET['s'];
+            $nombre_sejour = $result['nombreSejour'];
+
+            $created_at = Date('Y-m-d - H:i:s');
+
+            insertTo("INSERT INTO clients (nom, prenom, email, genre, contact, ville, created_at) VALUES ('$nom', '$prenom', '$email', '$genre', '$contact', '$ville', '$created_at')");
+            insertTo("INSERT INTO hotels (nom_hotel, type_chambre, created_at) VALUES ('$nomHotel', '$type_chambre', '$created_at')");
+            insertTo("INSERT INTO reservations (date_reservation, nombre_sejour, created_at) VALUES ('$created_at', '$nombre_sejour', '$created_at')");
+
         }
     }
 
 } else {
-    redirectPage('./pageErreurs/data_invalide/data_invalid');
-}
-
-
-/**
- * @param string $page
- */
-function redirectPage($page = "")
-{
-    $host = $_SERVER['HTTP_HOST'];
-    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-    $path = header("Location: http://$host$uri/$page.php");
-
-    return $path;
+    redirectPage('./pageMessages/data_invalide/data_invalid');
 }
 
 
@@ -67,7 +72,7 @@ function validateForm($data = [])
                     $data["isEmail"] = "false";
                 }
             }
-            $key == "nombreSejour" ? ($e > 0 ? $data["nombreSejour"] = "true" : $data["nombreSejour"] = "false") : null;
+            $key == "nombreSejour" ? ($e > 0 ? $data["numberDayIsPositive"] = "true" : $data["numberDayIsPositive"] = "false") : null;
         } else {
             return false;
         }
@@ -77,14 +82,17 @@ function validateForm($data = [])
 }
 
 
+/**
+ * @param string $page
+ */
+function redirectPage($page = "")
+{
+    $host = $_SERVER['HTTP_HOST'];
+    $uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    $path = header("Location: http://$host$uri/$page.php");
 
-
-
-
-
-
-
-
+    return $path;
+}
 
 
 
