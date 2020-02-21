@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="utf-8">
 
-    <title>RCO</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="description">
-    <meta content="http://webthemez.com" name="author">
-	<!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="css/jcarousel.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head> 
+<?php include('./layouts/loadStyleSheets.php'); ?>
 
 <body>
     <div class="home-page" id="wrapper">
         <!-- start header -->
-        <?php include('./layout_header.php') ?>
+        <?php include('./layouts/layout_header.php') ?>
       <!-- end header -->
         <section id="banner">
             <!-- Slider -->
@@ -576,21 +559,10 @@
             </div><!-- End row -->
         </div><!-- End container -->
     </section>
-		
-      <?php include('./layout_footer.php'); ?>
+
+        <?php include('./layouts/layout_footer.php'); ?>
     </div><a class="scrollup fa fa-angle-up active" href="#"></a> <!-- javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-     <script src="js/jquery.easing.1.3.js"></script> 
-     <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.fancybox.pack.js"></script>
-       <script src="js/jquery.fancybox-media.js"></script>
-        <script src="js/portfolio/jquery.quicksand.js"></script>
-         <script src="js/portfolio/setting.js"></script>
-          <script src="js/jquery.flexslider.js"></script>
-           <script src="js/animate.js"></script>
-            <script src="js/custom.js"></script>
-             <script src="js/owl-carousel/owl.carousel.js"></script>
+    <?php include('./layouts/loadScript.php'); ?>
 </body>
 </html>
