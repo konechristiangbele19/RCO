@@ -21,10 +21,11 @@ if (isset($_POST) && !empty($_POST)) {
     if (!$result) {
         redirectPage('./pageErreurs/data_invalide/data_invalid');
     } else {
-        if ($result["isEmail"] == "false") {
+        if (($result["isEmail"] == "false") || ($result["nombreSejour"] == "false")) {
             redirectPage('./pageErreurs/data_invalide/data_invalid');
         } else {
-            require("DataBaseConnexion/connexion.php");
+            //require("DataBaseConnexion/connexion.php");
+            return true;
         }
     }
 
@@ -66,6 +67,7 @@ function validateForm($data = [])
                     $data["isEmail"] = "false";
                 }
             }
+            $key == "nombreSejour" ? ($e > 0 ? $data["nombreSejour"] = "true" : $data["nombreSejour"] = "false") : null;
         } else {
             return false;
         }
